@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Sample Inquiry Form</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<title>My Favorite Pizza</title>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
-
-<link href="style.css" rel="stylesheet" type="text/css" />
-
-</head>
-
-<body>
-
-<!-- WEB PAGE CONTENT HERE -->
-
-<div class="pageContainer">
-  <div class="imageContainer"> 
-    <img src="images/pizza.jpg" alt="Pizza with pepperoni and cheese." /> 
-  </div>
-  <div class="textContainer">
-    <h1>Pizza!</h1>
-    <p>My Favorite Toppings: </p>
-    <ul>
-      <li>Pepperoni</li>
-      <li>Mozzarella Cheese</li>
-      <li>Mushrooms</li>
-    </ul>
-  </div>
-</div>
-
-</body>
+  <body>
+    <main>
+      <form>
+        <div>
+          <label for="name">Name:</label>
+          <br>
+          <input 
+            id="name" 
+            type="text" 
+            name="name"
+            required
+          />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <br>
+          <input 
+            id="email"
+            type="text"
+            name="email"
+            required/>
+        </div>
+        <div>
+          <label for="form-message">Your message:</label>
+          <br>
+          <textarea
+            id="form-message"
+            name="message"
+            required
+            maxlength="500"
+            ></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
 </html>
-
-
